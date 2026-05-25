@@ -1,0 +1,99 @@
+:root {
+    --principal: #2c3e50;
+    --secundario: #3498db;
+    --fondo: #f4f6f7;
+    --texto: #333333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    padding: 10px;
+}
+header {
+    background-color: var(--principal);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+#menus ul {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+}
+#menus a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    background: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+h2 {
+    color: var(--principal);
+    margin-bottom: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: var(--principal);
+    color: white;
+}
+iframe {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+/* Formulario */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+button {
+    background-color: var(--secundario);
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+/* Celulares*/
+@media (min-width: 768px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    #menus ul {
+        flex-direction: row; 
+        justify-content: center;
+        gap: 20px;
+    }
+    button {
+        width: auto;
+        padding: 10px 20px;
+    }
+}
