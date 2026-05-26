@@ -97,3 +97,12 @@ button {
         padding: 10px 20px;
     }
 }
+/* --- Arreglo del tamaño de la foto de perfil --- */
+#personalinfo img {
+  width: 200px;        
+  height: auto;         
+  border-radius: 50%;  
+  display: block;   
+  margin: 0 auto;      
+  margin-bottom: 20px;  
+}
